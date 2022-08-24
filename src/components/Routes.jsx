@@ -1,14 +1,11 @@
-import About from './Page/Body/About/About.jsx';
-import Form from './Page/Body/Form/Form.jsx';
-import Home from './Page/Body/Home/Home.jsx';
-import List from './Page/Body/List/List.jsx';
-import Layout from './Page/Layout';
-import Teams from './Page/Body/NBA/Teams/Teams.jsx';
-import NBA from './Page/Body/NBA/NBA.jsx';
+import About from './Pages/Body/About/About.jsx';
+import Home from './Pages/Body/Home/Home.jsx';
+import Progress from './Pages/Body/Progress/Progress.jsx';
+import Layout from './Pages/Layout';
 import { Routes as RRoutes, Route, Navigate } from 'react-router-dom';
-import ProtectRoutes from './Page/Auth/ProtectRoutes.jsx';
-import UserAuth from './Page/Auth/UserAuth.jsx';
-import Profile from './Page/Auth/Profile.jsx';
+import ProtectRoutes from './Pages/Auth/ProtectRoutes.jsx';
+import UserAuth from './Pages/Auth/UserAuth.jsx';
+import Profile from './Pages/Auth/Profile.jsx';
 
 export default function Routes() {
     return (
@@ -17,13 +14,9 @@ export default function Routes() {
             <Route element={<Layout />}>
                 <Route element={<ProtectRoutes />}>
                     <Route index element={<Home />} />
-                    <Route path="list" element={<List />} />
+                    <Route path="list" element={<Progress />} />
                     <Route path="about" element={<About />} />
-                    <Route path="form" element={<Form />} />
                     <Route path="user/profile" element={<Profile />} />
-                    <Route path="nba" element={<NBA />}>
-                        <Route index element={<Teams />} />
-                    </Route>
                 </Route>
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Route>

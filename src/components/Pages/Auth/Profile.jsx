@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useProfile } from '../../../State/Hooks/user';
-import Section from '../Body/Basic/Section/Section';
-import Button from '../Body/Basic/Button/Button.jsx';
-import { InputControl } from '../Body/Form/FormControls/FormControls';
+import Section from '../Body/Global/Section/Section';
+import Button from '../Body/Global/Button/Button.jsx';
+import { InputControl } from '../Body/Global/Form/FormControls/FormControls';
 import styles from './Profile.css';
 import { getUser } from '../../../State/Services/user-service';
 

@@ -1,8 +1,8 @@
 import styles from './AuthForm.css';
 import { Link } from 'react-router-dom';
-import Section from '../Body/Basic/Section/Section.jsx';
-import Button from '../Body/Basic/Button/Button.jsx';
-import { InputControl } from '../Body/Form/FormControls/FormControls';
+import Section from '../Body/Global/Section/Section.jsx';
+import Button from '../Body/Global/Button/Button.jsx';
+import { InputControl } from '../Body/Global/Form/FormControls/FormControls';
 import { useState } from 'react';
 
 export default function AuthForm({ header, button, prompt, link, onSubmit }) {

@@ -1,7 +1,0 @@
-.AddTeam {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: flex-end;
-    margin-bottom: 20px;
-}
