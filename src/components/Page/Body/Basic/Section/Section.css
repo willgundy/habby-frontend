@@ -1,0 +1,19 @@
+.Section {
+    background: var(--white-color);
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: var(--margin);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 0.8em;
+        color: var(--caption-color);
+    }
+}

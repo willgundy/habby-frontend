@@ -1,0 +1,18 @@
+.List {
+    padding: 0 var(--padding);
+
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(160px, 1fr)
+    );
+    gap: 10px;
+
+
+}    
+
+.Filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}

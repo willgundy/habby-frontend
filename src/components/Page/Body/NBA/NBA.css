@@ -1,0 +1,24 @@
+.NBA {
+    padding: var(--padding);
+    padding-top: var(--padding-half);
+  
+    display: grid;
+    gap: var(--padding-half);
+
+  }
+
+.subHeader {
+  background: var(--complimentary-color);
+  opacity: 0.6;
+  color: var(--primary-color);
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1em;
+
+  a {
+    margin-left: 40px;
+  }
+}
